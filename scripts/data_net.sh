@@ -14,3 +14,5 @@ make clean && make -j && sudo make install
 cd $PACKETRUSHER
 go mod download
 go build cmd/packetrusher.go
+
+cp /local/repository/config/config_packetrusher.yml $PACKETRUSHER/config/config.yml
