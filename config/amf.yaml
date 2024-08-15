@@ -19,7 +19,7 @@ amf:
         - uri: http://10.10.1.3:7777
   ngap:
     server:
-      - address: 10.10.1.2
+      - address: 10.10.1.12
   metrics:
     server:
       - address: 127.0.0.5
