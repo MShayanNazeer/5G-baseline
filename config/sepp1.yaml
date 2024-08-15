@@ -12,10 +12,10 @@ sepp:
   default:
     tls:
       server:
-        private_key: /var/open5gs/tls/sepp1.key
-        cert: /var/open5gs/tls/sepp1.crt
+        private_key: /etc/open5gs/tls/sepp1.key
+        cert: /etc/open5gs/tls/sepp1.crt
       client:
-        cacert: /var/open5gs/tls/ca.crt
+        cacert: /etc/open5gs/tls/ca.crt
   sbi:
     server:
       - address: 10.10.1.21

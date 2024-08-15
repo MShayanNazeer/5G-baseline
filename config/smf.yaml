@@ -50,7 +50,7 @@ smf:
 #    - ::1
 #  ctf:
 #    enabled: auto   # auto(default)|yes|no
-  freeDiameter: /var/freeDiameter/smf.conf
+  freeDiameter: /etc/freeDiameter/smf.conf
 
 ################################################################################
 # SMF Info

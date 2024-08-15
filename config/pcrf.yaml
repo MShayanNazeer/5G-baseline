@@ -9,7 +9,7 @@ global:
     ue: 1024  # The number of UE can be increased depending on memory size.
 #    peer: 64
 pcrf:
-  freeDiameter: /var/freeDiameter/pcrf.conf
+  freeDiameter: /etc/freeDiameter/pcrf.conf
 
 ################################################################################
 # Locally configured policy
