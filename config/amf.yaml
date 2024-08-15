@@ -10,13 +10,13 @@ global:
 amf:
   sbi:
     server:
-      - address: 127.0.0.5
+      - address: 10.10.1.10
         port: 7777
     client:
 #      nrf:
 #        - uri: http://127.0.0.10:7777
       scp:
-        - uri: http://127.0.0.200:7777
+        - uri: http://10.10.1.3:7777
   ngap:
     server:
       - address: 10.10.1.2

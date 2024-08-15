@@ -19,6 +19,7 @@ DEBIAN_FRONTEND=noninteractive sudo apt -y --force-yes -o Dpkg::Options::="--for
 sudo apt -y --force-yes install make g++ openjdk-11-jdk maven libsctp-dev lksctp-tools snapd
 # getting cmake from apt installs an old version of cmake, so we have to get it from snap
 sudo snap install cmake --classic
+sudo apt -y install iperf3
 # maybe gets rid of grub popup manual enter req
 # https://askubuntu.com/questions/146921/how-do-i-apt-get-y-dist-upgrade-without-a-grub-config-prompt
 

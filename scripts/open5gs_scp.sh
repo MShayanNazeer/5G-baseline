@@ -114,7 +114,4 @@ echo "Setup 5G Core"
 
 cp /local/repository/config/scp.yaml /etc/open5gs/scp.yaml
 
-sudo systemctl restart open5gs-mmed
-sudo systemctl restart open5gs-sgwud
-sudo systemctl restart open5gs-amfd
-sudo systemctl restart open5gs-upfd
+sudo systemctl restart open5gs-scpd

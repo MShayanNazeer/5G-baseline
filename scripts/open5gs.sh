@@ -110,9 +110,20 @@ cp /local/repository/config/sgwu.yaml /etc/open5gs/sgwu.yaml
 echo "Setup 5G Core"
 
 cp /local/repository/config/amf.yaml /etc/open5gs/amf.yaml
+cp /local/repository/config/bsf.yaml /etc/open5gs/bsf.yaml
+cp /local/repository/config/hss.yaml /etc/open5gs/hss.yaml
+cp /local/repository/config/nrf.yaml /etc/open5gs/nrf.yaml
+cp /local/repository/config/pcf.yaml /etc/open5gs/pcf.yaml
+cp /local/repository/config/sepp2.yaml /etc/open5gs/sepp2.yaml
+cp /local/repository/config/udr.yaml /etc/open5gs/udr.yaml
+cp /local/repository/config/ausf.yaml /etc/open5gs/ausf.yaml
+cp /local/repository/config/nssf.yaml /etc/open5gs/nssf.yaml
+cp /local/repository/config/pcrf.yaml /etc/open5gs/pcrf.yaml
+cp /local/repository/config/sepp1.yaml /etc/open5gs/sepp1.yaml
+cp /local/repository/config/sgwc.yaml /etc/open5gs/sgwc.yaml
+cp /local/repository/config/smf.yaml /etc/open5gs/smf.yaml
+cp /local/repository/config/udm.yaml /etc/open5gs/udm.yaml
 cp /local/repository/config/upf.yaml /etc/open5gs/upf.yaml
 
-sudo systemctl restart open5gs-mmed
-sudo systemctl restart open5gs-sgwud
-sudo systemctl restart open5gs-amfd
-sudo systemctl restart open5gs-upfd
+
+sudo systemctl restart open5gs-*
