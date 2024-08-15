@@ -10,6 +10,6 @@ global:
 #    peer: 64
 
 hss:
-  freeDiameter: /var/freeDiameter/hss.conf
+  freeDiameter: /etc/freeDiameter/hss.conf
 #  sms_over_ims: "sip:smsc.mnc001.mcc001.3gppnetwork.org:7060;transport=tcp"
 #  use_mongodb_change_stream: true
