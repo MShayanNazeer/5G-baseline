@@ -107,16 +107,16 @@ scp = request.RawPC("5G-SCP")
 scp.component_manager_id = GLOBALS.SITE_URN
 # data_net.disk_image = GLOBALS.UBUNTU22_IMG
 scp.hardware_type = GLOBALS.HWTYPE if params.phystype != "" else params.phystype
-scp.addService(rspec.Execute(shell="bash", command=invoke_script_str("open5gs.sh")))
+scp.addService(rspec.Execute(shell="bash", command=invoke_script_str("open5gs_scp.sh")))
 gNBCoreLink.addNode(scp)
 
 # Add node that will host Data Network
-data_net = request.RawPC("Data-Network")
-data_net.component_manager_id = GLOBALS.SITE_URN
+packet_rusher = request.RawPC("packet_rusher")
+packet_rusher.component_manager_id = GLOBALS.SITE_URN
 # data_net.disk_image = GLOBALS.UBUNTU22_IMG
-data_net.hardware_type = GLOBALS.HWTYPE if params.phystype != "" else params.phystype
-data_net.addService(rspec.Execute(shell="bash", command=invoke_script_str("data_net.sh")))
-gNBCoreLink.addNode(data_net)
+packet_rusher.hardware_type = GLOBALS.HWTYPE if params.phystype != "" else params.phystype
+packet_rusher.addService(rspec.Execute(shell="bash", command=invoke_script_str("data_net.sh")))
+gNBCoreLink.addNode(packet_rusher)
 
 tour = IG.Tour()
 tour.Description(IG.Tour.MARKDOWN, tourDescription)
